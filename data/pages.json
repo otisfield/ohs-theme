@@ -1,0 +1,520 @@
+[
+  {
+    id: 261,
+    date: "2015-09-20T15:15:15",
+    date_gmt: "2015-09-20T15:15:15",
+    guid: {
+      rendered: "http://www.otisfield.org/?page_id=261"
+    },
+    modified: "2016-01-17T03:01:33",
+    modified_gmt: "2016-01-17T03:01:33",
+    slug: "donate",
+    type: "page",
+    link: "http://www.otisfield.org/donate/",
+    title: {
+      rendered: "Donate"
+    },
+    content: {
+      rendered: "<p>Please click the button below to make a secure donation through PayPal.</p> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> <input type="hidden" name="cmd" value="_s-xclick"><br /> <input type="hidden" name="hosted_button_id" value="F68R34E5563XU"><br /> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" ><br /> <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br /> </form> "
+    },
+    excerpt: {
+      rendered: "<p>Please click the button below to make a secure donation through PayPal.</p> "
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "closed",
+    ping_status: "closed",
+    template: "",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/261"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=261"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/261/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=261"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/261/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 14,
+    date: "2014-12-17T02:52:11",
+    date_gmt: "2014-12-17T02:52:11",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=14"
+    },
+    modified: "2015-03-20T00:34:08",
+    modified_gmt: "2015-03-20T00:34:08",
+    slug: "contact",
+    type: "page",
+    link: "http://www.otisfield.org/contact/",
+    title: {
+      rendered: "Contact"
+    },
+    content: {
+      rendered: "<p>Please use the following form to contact the Otisfield Historical Society. We will respond as soon as we are able.</p> <div role="form" class="wpcf7" id="wpcf7-f238-o1" lang="en-US" dir="ltr"> <div class="screen-reader-response"></div> <form action="/wp-json/wp/v2/pages#wpcf7-f238-o1" method="post" class="wpcf7-form" novalidate="novalidate"> <div style="display: none;"> <input type="hidden" name="_wpcf7" value="238" /> <input type="hidden" name="_wpcf7_version" value="4.3.1" /> <input type="hidden" name="_wpcf7_locale" value="en_US" /> <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f238-o1" /> <input type="hidden" name="_wpnonce" value="b671f1f5dd" /> </div> <p>Your Name (required)<br /> <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p> <p>Your Email (required)<br /> <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p> <p>Subject<br /> <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p> <p>Your Message<br /> <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p> <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p> <div class="wpcf7-response-output wpcf7-display-none"></div></form></div> "
+    },
+    excerpt: {
+      rendered: "<p>Please use the following form to contact the Otisfield Historical Society. We will respond as soon as we are able.</p> "
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/14"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=14"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/14/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=14"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/14/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 12,
+    date: "2014-12-17T02:52:03",
+    date_gmt: "2014-12-17T02:52:03",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=12"
+    },
+    modified: "2016-01-16T02:41:47",
+    modified_gmt: "2016-01-16T02:41:47",
+    slug: "events",
+    type: "page",
+    link: "http://www.otisfield.org/events/",
+    title: {
+      rendered: "Events"
+    },
+    content: {
+      rendered: ""
+    },
+    excerpt: {
+      rendered: ""
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "archive-events.php",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/12"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=12"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/12/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=12"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/12/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 10,
+    date: "2014-12-17T02:51:54",
+    date_gmt: "2014-12-17T02:51:54",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=10"
+    },
+    modified: "2015-03-20T12:40:58",
+    modified_gmt: "2015-03-20T12:40:58",
+    slug: "membership",
+    type: "page",
+    link: "http://www.otisfield.org/membership/",
+    title: {
+      rendered: "Membership"
+    },
+    content: {
+      rendered: "<p><a href="http://www.otisfield.org/wp-content/uploads/2014/12/OtisfieldHS15.pdf">See our 2015 Newsletter By Clicking Here (PDF).</a></p> <h3>Membership Renewal Time!</h3> <p>Our members are our most important asset. Please remember to renew your membership for 2015 and keep things humming in the Old Town House.</p> <h3>2014: a Quieter Year with Important Progress</h3> <p>The year 2014 proved a quieter year than the previous two, with no new construction taking place. It was a year the Historical Society caught its breath, started building a Web site, opened its archives to the public one afternoon a week, treated the public to strawberry shortcake, and, as always, recorded and broadcast some Otisfield history in four public programs. The first program, held in April, titled “Food from the Fifties,” included not only a luncheon with food from the Fifties but also an informative talk about food trends by Polly Bartow. In June and August Ethel Turner and Jean Hankins presented a power point presentation summarizing their research on the summer camps on Pleasant Pond. In September Celeste Hyer and Quentin Henderson remembered Orrell Linnell, the Otisfield Centenarian who lived most of his long life in the Gore section of town. And in November, Jean Pottle and Jean Hankins explained how Santa Claus has changed his appearance over the years. We also served strawberry shortcake to over 100 folks in July, and a good number enjoyed our August picnic at the Bartow Camp on Thompson Lake.</p> <h3>Archives Open Weekly</h3> <p>With the Sybil Lamb Archival Room completely furbished with good lighting, climate controls, stacks of document boxes, and even a work table, we opened that room for public use on Wednesday afternoons from May to November. The public’s interest has been unexpectedly high, and we’ve had a number of folks—from Otisfield and beyond—poring over maps, photographs, and old papers just about every time we’ve been open. On May 6 we’ll start our second season.</p> <h3>Gifts Great and Small</h3> <p>During 2014 a number of historically-minded folks gave us a wide variety of manuscripts, photos, and artifacts, all with an Otisfield connection. Among them: a large box of memorabilia, yearbooks, and photos from Great Oaks; the letters and papers of Dr. Beryl Moore; a piece of cloth woven from flax grown in Otisfield; Wight family legal papers; and the genealogy of the McAuliffe family. Thank you! Now cataloged, these are ready for public inspection.</p> <h3>Donations</h3> <p>All donations may be sent to:</p> <p>Otisfield Historical Society<br /> c/o Polly Bartow, Treasurer<br /> 11 Jessie Lane<br /> Biddeford, ME 04005</p> <p>The Otisfield Historical Society is a 501(c)(3) non-profit organization. Your donation is tax deductible and is very much appreciated.</p> "
+    },
+    excerpt: {
+      rendered: "<p>See our 2015 Newsletter By Clicking Here (PDF). Membership Renewal Time! Our members are our most important asset. Please remember to renew your membership for 2015 and keep things humming in the Old Town House. 2014: a Quieter Year with Important Progress The year 2014 proved a quieter year than the previous two, with no new [&hellip;]</p> "
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/10"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=10"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/10/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=10"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/10/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 8,
+    date: "2014-12-17T02:51:43",
+    date_gmt: "2014-12-17T02:51:43",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=8"
+    },
+    modified: "2014-12-17T02:51:43",
+    modified_gmt: "2014-12-17T02:51:43",
+    slug: "explore",
+    type: "page",
+    link: "http://www.otisfield.org/explore/",
+    title: {
+      rendered: "Explore"
+    },
+    content: {
+      rendered: ""
+    },
+    excerpt: {
+      rendered: ""
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/8"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=8"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/8/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=8"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/8/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 6,
+    date: "2014-12-17T02:51:30",
+    date_gmt: "2014-12-17T02:51:30",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=6"
+    },
+    modified: "2015-03-21T13:03:07",
+    modified_gmt: "2015-03-21T13:03:07",
+    slug: "archives",
+    type: "page",
+    link: "http://www.otisfield.org/archives/",
+    title: {
+      rendered: "Archives"
+    },
+    content: {
+      rendered: "<p>The archives of the Otisfield Historical Society are housed in the Sybil Lamb Archival Room at the Historical Society’s building, the Old Town House, 53 Bell Hill Road, Otisfield. Jean Hankins currently serves as archivist. </p> <p>At present the archives contain 72 separate collections, all housed in document boxes. In addition to the major collections, the archives contain about 200 “small collections,” which typically consist of only one or two folders. In addition to a limited number of important artifacts, among them Nathan Nutting’s planer, Hester Patch’s cross-stich sampler, and a friendship quilt made by ladies in the community, the collections consist of maps, deeds, record books, diaries, genealogies, letters, account books, newspaper clippings, some town records, and much more. </p> <p>Collection 17, named the Vertical File, contains photocopies of newspaper articles pertaining to Otisfield, some going back to the late 19th century. The obituaries in this collection are particularly important sources of information.</p> <p>Collection 40, the Pottle Family Collection, is one of our largest. It contains 10 boxes of letters written to and from Annette (Kemp) Pottle (1875 – 1958), who spent her entire life in Otisfield. The letters, which contain family news, comments on daily activities, and gossip about the neighbors, provide a fascinating glimpse of everyday life in Otisfield in the early 20th century when it was still a very small farming community where everyone did know everyone else. </p> <p>The archives are open to the public on Wednesday afternoons from 2-4, May through October, and by appointment. Jean Hankins, the archivist, can be reached at 207-539-2521 or jeanhankins@myfairpoint.net. The archives can be used only on site, but copies of most photographs or documents can be made. </p> "
+    },
+    excerpt: {
+      rendered: "<p>The archives of the Otisfield Historical Society are housed in the Sybil Lamb Archival Room at the Historical Society’s building, the Old Town House, 53 Bell Hill Road, Otisfield. Jean Hankins currently serves as archivist. At present the archives contain 72 separate collections, all housed in document boxes. In addition to the major collections, the [&hellip;]</p> "
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "archive.php",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/6"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=6"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/6/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=6"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/6/meta"
+      }
+      ]
+    }
+  },
+  {
+    id: 4,
+    date: "2014-12-17T02:51:22",
+    date_gmt: "2014-12-17T02:51:22",
+    guid: {
+      rendered: "http://www.derekdorr.net/otisfield/?page_id=4"
+    },
+    modified: "2016-01-16T00:14:03",
+    modified_gmt: "2016-01-16T00:14:03",
+    slug: "about",
+    type: "page",
+    link: "http://www.otisfield.org/about/",
+    title: {
+      rendered: "About"
+    },
+    content: {
+      rendered: "<p><b>Founded:</b> The Otisfield Historical Society was founded in 1981. To a large degree it was the outgrowth of the survey of Otisfield’s oldest buildings, undertaken for the Oxford County Historic Resource Survey. This survey, together with similar surveys of other towns in Oxford County, eventually resulted in the compilation and publication of Randall H. Bennett’s acclaimed architectural survey, titled <i>Oxford County, Maine: A Guide to Its Historic Architecture </i>(Bethel, Maine, 1984). Many of the Otisfielders who participated in that survey were the first members of the Otisfield Historical Survey. Ethel Bean Turner provided much of the energy and leadership of the Society during its first years.</p> <p><b>Mission: </b>According to the Historical Society’s Constitution, the purpose of the Otisfield Historical Society “shall be to bring together those people interested in the history of Otisfield, Maine, to collect and preserve any material which may help to establish or illustrate the history of the Otisfield area. The Society shall make accessible historical information, promote interest in history, provide relevant programs, and acquire and hold property.”</p> <p><b>Collections: </b>75 collections, including letters, diaries, photographs, videotapes, audiotapes, deeds and legal documents, autograph albums, books, scrapbooks, and artifacts. The Society’s Collection Policy states that we will accept and acquire only items which we can store and care for properly. It is also our policy to make these as accessible as possible without putting them at physical risk.</p> <p><b>Officers: </b></p> <p>Shirley Hamilton, President</p> <p>Callie Zilinsky, Vice-President</p> <p>Jean Pottle, Secretary</p> <p>Polly Bartow, Treasurer</p> <p>Jean Hankins, Archivist</p> <p><b>Directors: </b>Derek Dorr, Alan Douglass, Genise Stern, and Celeste Hyer</p> <p><strong>Directors Emeritus:  </strong>Bruce Baker and Ethel Turner</p> "
+    },
+    excerpt: {
+      rendered: "<p>Founded: The Otisfield Historical Society was founded in 1981. To a large degree it was the outgrowth of the survey of Otisfield’s oldest buildings, undertaken for the Oxford County Historic Resource Survey. This survey, together with similar surveys of other towns in Oxford County, eventually resulted in the compilation and publication of Randall H. Bennett’s [&hellip;]</p> "
+    },
+    author: 1,
+    featured_image: 0,
+    parent: 0,
+    menu_order: 0,
+    comment_status: "open",
+    ping_status: "open",
+    template: "",
+    _links: {
+      self: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/4"
+        }
+      ],
+      collection: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages"
+        }
+      ],
+      about: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/types/page"
+        }
+      ],
+      author: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/users/1"
+        }
+      ],
+      replies: [
+        {
+          embeddable: true,
+          href: "http://www.otisfield.org/wp-json/wp/v2/comments?post=4"
+        }
+      ],
+      version-history: [
+        {
+          href: "http://www.otisfield.org/wp-json/wp/v2/pages/4/revisions"
+        }
+      ],
+      https://api.w.org/attachment: [
+      {
+        href: "http://www.otisfield.org/wp-json/wp/v2/media?parent=4"
+      }
+      ],
+      https://api.w.org/meta: [
+      {
+        embeddable: true,
+        href: "http://www.otisfield.org/wp-json/wp/v2/pages/4/meta"
+      }
+      ]
+    }
+  }
+]

@@ -1,0 +1,19 @@
+<h2>Articles</h2>
+<hr class="headerDivider">
+{{#each this}}
+    <hr class="eventDivider">
+    <div class="event vevent" itemprop="event" itemscope itemtype="http://schema.org/Event">
+        <div class="eventDate">
+            <a href="/events/{{link}}"><span>OCT</span><br>
+                <span>22</span><br>
+                <span>2015</span></a>
+        </div>
+        <div class="eventData">
+            <a href="/events/{{link}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{title/rendered}}</span></a><br>
+            <span class="eventInfo location" itemprop="location">Old Town House, Otisfield</span><br>
+            <span class="eventTime">7:00PM</span>
+        </div>
+    </div>
+{{/each}}
+
+
