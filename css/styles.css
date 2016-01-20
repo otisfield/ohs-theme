@@ -278,6 +278,9 @@ img {
   .articleDivider {
     display: block; } }
 
+.articleLink a {
+  color: #ae1a32; }
+
 .headerDivider {
   display: none; }
   @media (min-width: 690px) {
