@@ -177,80 +177,105 @@ img {
 
 /* event Styles */
 @media (min-width: 690px) {
-  .events {
+  .events,
+  .articles {
     overflow: auto; } }
 
-.event {
+.event,
+.article {
   overflow: auto; }
   @media (min-width: 690px) {
-    .event {
+    .event,
+    .article {
       width: 50%;
       float: left;
       margin-bottom: 1em; } }
   @media (min-width: 992px) {
-    .event {
+    .event,
+    .article {
       width: auto;
       float: none;
       margin-bottom: 0; } }
 
-.eventDate {
+.eventDate,
+.articleImage {
   margin: 0 auto;
   background: #ae1a32;
   font-size: 1.5em;
   text-align: center;
   width: 4.25em; }
   @media (min-width: 320px) {
-    .eventDate {
+    .eventDate,
+    .articleImage {
       float: left; } }
-  .eventDate a {
+  .eventDate a,
+  .articleImage a {
     color: #fff; }
+  .eventDate img,
+  .articleImage img {
+    width: 90px;
+    height: 90px; }
 
-.eventData {
+.eventData,
+.articleInformation {
   text-align: center;
   width: 100%;
   padding-left: 0.25em; }
   @media (min-width: 320px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       float: left;
       width: 12em;
       text-align: left; } }
   @media (min-width: 380px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 14em; } }
   @media (min-width: 440px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 19em; } }
   @media (min-width: 500px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 24em; } }
   @media (min-width: 600px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 31em; } }
   @media (min-width: 660px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 35em; } }
   @media (min-width: 690px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 14em; } }
   @media (min-width: 770px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 17em; } }
   @media (min-width: 900px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 21em; } }
   @media (min-width: 992px) {
-    .eventData {
+    .eventData,
+    .articleInformation {
       width: 13em; } }
 
-.eventTitle {
+.eventTitle,
+.articleTitle {
   color: #ae1a32; }
 
 @media (min-width: 690px) {
-  .eventDivider {
+  .eventDivider,
+  .articleDivider {
     display: none; } }
 
 @media (min-width: 992px) {
-  .eventDivider {
+  .eventDivider,
+  .articleDivider {
     display: block; } }
 
 .headerDivider {
