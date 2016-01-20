@@ -10,7 +10,8 @@
 
     var emptyObject = {},
         emptyString = '',
-        pieceClass = 'piece';
+        pieceClass = 'piece',
+        pageDataSource = $('body').data('source');
 
     function executeEmptyPromise() {
         return new Promise(function(resolve){
@@ -93,14 +94,22 @@
 
     Promise.all([
         ajaxRender(true,'header',emptyString).then(function(){
-            return ajaxRender(false,'contentTop',emptyString);
+            var isItDone;
+
+            if (pageDataSource) {
+                $.ajax(pageDataSource).then(function (data) {
+                    renderTemplate('contentTop',data,pieceClass);
+                    renderTemplate('breadcrumbs',data,pieceClass);
+                    renderTemplate('contentTitle',data,pieceClass);
+                    renderTemplate('contentBody',data,pieceClass);
+                });
+            } else {
+               renderTemplate('contentTop',emptyObject, emptyString);
+            }
         }),
         ajaxRender(true,'events',pieceClass),
         ajaxRender(true,'articles',pieceClass),
         ajaxRender(false,'ctaTop',pieceClass),
-        ajaxRender(false,'breadcrumbs',pieceClass),
-        ajaxRender(false,'contentTitle',pieceClass),
-        ajaxRender(false,'contentBody',pieceClass),
         ajaxRender(false,'ctaMiddle',pieceClass),
         ajaxRender(false,'ctaBottom',pieceClass),
         ajaxRender(false,'updates',pieceClass),
