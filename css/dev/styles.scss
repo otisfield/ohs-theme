@@ -246,13 +246,15 @@ img {
 
   /* event Styles */
 
-  .events {
+  .events,
+  .articles {
     @media (min-width: 690px) {
       overflow: auto;
     }
   }
 
-  .event {
+  .event,
+  .article {
     overflow: auto;
 
     @media (min-width: 690px) {
@@ -268,7 +270,8 @@ img {
     }
   }
 
-  .eventDate {
+  .eventDate,
+  .articleImage {
     margin: 0 auto;
     background: rgb(174, 26, 50);
     font-size: 1.5em;
@@ -284,7 +287,8 @@ img {
     }
   }
 
-  .eventData {
+  .eventData,
+  .articleInformation {
     text-align:center;
     width: 100%;
     padding-left: 0.25em;
@@ -332,11 +336,13 @@ img {
     }
   }
 
-  .eventTitle {
+  .eventTitle,
+  .articleTitle{
     color: rgb(174,26,50);
   }
 
-  .eventDivider {
+  .eventDivider,
+  .articleDivider{
     @media (min-width: 690px) {
       display: none;
     }
