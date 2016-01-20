@@ -59,10 +59,25 @@
         return false;
     }
 
+    function checkForSource (isUrl,templateName,selector) {
+        var url = isUrl;
+
+        if (url === true) {
+            if (selector !== undefined && selector !== false) {
+                url = $(selector).data(templateName);
+            } else {
+                url = $('#' + templateName).data('source');
+            }
+        }
+
+        return url;
+    }
+
     function ajaxRender(url,templateName,addClass,selector) {
         var thePromise;
 
         if (shouldWeRender(templateName,selector)) {
+            url = checkForSource(url,templateName,selector);
             thePromise = determineIfEmptyPromise(url);
 
             return thePromise.then(function (data) {
@@ -77,11 +92,11 @@
 
 
     Promise.all([
-        ajaxRender('data/menu.json','header',emptyString).then(function(){
+        ajaxRender(true,'header',emptyString).then(function(){
             return ajaxRender(false,'contentTop',emptyString);
         }),
-        ajaxRender('data/events.json','events',pieceClass),
-        ajaxRender('data/posts.json','articles',pieceClass),
+        ajaxRender(true,'events',pieceClass),
+        ajaxRender(true,'articles',pieceClass),
         ajaxRender(false,'ctaTop',pieceClass),
         ajaxRender(false,'breadcrumbs',pieceClass),
         ajaxRender(false,'contentTitle',pieceClass),
@@ -91,7 +106,7 @@
         ajaxRender(false,'updates',pieceClass),
         ajaxRender(false,'contentBottom',pieceClass),
         ajaxRender(false,'footer',emptyString),
-        ajaxRender('data/media.json','media',emptyString,'#content')
+        ajaxRender(true,'media',emptyString,'#content')
     ]).then(function(){
         var $content = $('#content').imagesLoaded(function () {
             $content.masonry({
