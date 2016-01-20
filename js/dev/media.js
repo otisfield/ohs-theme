@@ -66,10 +66,10 @@
             $('body').append($modal).append($button);
 
         } else {
-            $modalBody = $modal.find('modal-body');
+            $modalBody = $modal.find('.modal-body');
             $modalBody.children().remove();
             $modalBody.append($image)
-            $modal.find('modal-title').text(data.title)
+            $modal.find('.modal-title').text(data.title)
         }
 
         $button.click();
