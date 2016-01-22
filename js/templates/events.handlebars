@@ -4,12 +4,12 @@
 <hr class="eventDivider">
 <div class="event vevent" itemprop="event" itemscope itemtype="http://schema.org/Event">
     <div class="eventDate">
-        <a href="/events/{{post_name}}"><span>{{date/startDate/monthAbbreviation}}</span><br>
-        <span>{{date/startDate/day}}</span><br>
-        <span>{{date/startDate/year}}</span></a>
+        <a href="{{post_name}}"><span>{{dates/startDate/monthAbbreviation}}</span><br>
+        <span>{{dates/startDate/day}}</span><br>
+        <span>{{dates/startDate/year}}</span></a>
     </div>
     <div class="eventData">
-        <a href="/events/{{link}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{post_title}}</span></a><br>
+        <a href="{{link}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{title/rendered}}</span></a><br>
         {{#if location}}
         <span class="eventInfo location" itemprop="location">{{location/name}}</span><br>
         {{/if}}
