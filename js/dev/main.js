@@ -93,19 +93,23 @@
 
 
     Promise.all([
-        ajaxRender(true,'header',emptyString).then(function(){
-            var isItDone;
+        new Promise(function(resolve){
+            ajaxRender(true,'header',emptyString).then(function(){
+                var isItDone;
 
-            if (pageDataSource) {
-                $.ajax(pageDataSource).then(function (data) {
-                    renderTemplate('contentTop',data,pieceClass);
-                    renderTemplate('breadcrumbs',data,pieceClass);
-                    renderTemplate('contentTitle',data,pieceClass);
-                    renderTemplate('contentBody',data,pieceClass);
-                });
-            } else {
-               renderTemplate('contentTop',emptyObject, emptyString);
-            }
+                if (pageDataSource) {
+                    $.ajax(pageDataSource).then(function(data) {
+                        renderTemplate('contentTop',data,pieceClass);
+                        renderTemplate('breadcrumbs',data,pieceClass);
+                        renderTemplate('contentTitle',data,pieceClass);
+                        renderTemplate('contentBody',data,pieceClass);
+                    });
+                } else {
+                    renderTemplate('contentTop',emptyObject, emptyString);
+                }
+
+                resolve();
+            });
         }),
         ajaxRender(true,'events',pieceClass),
         ajaxRender(true,'articles',pieceClass),
