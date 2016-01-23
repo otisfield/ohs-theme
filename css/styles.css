@@ -11,7 +11,7 @@ img {
 
 @media (min-width: 992px) {
   .col-md-8 {
-    width: 65%; } }
+    width: 64%; } }
 
 /* generic Styles */
 .lightShadow {
@@ -82,7 +82,8 @@ img {
     display: block;
     margin: 0.5em auto; }
   .piece.media {
-    padding-top: 1em; }
+    padding-top: 1em;
+    text-align: center; }
     .piece.media p {
       margin-top: 1em; }
 
@@ -113,7 +114,8 @@ img {
   position: relative;
   height: 10em;
   overflow: hidden;
-  margin-bottom: -1.5em; }
+  margin-bottom: -1.5em;
+  background: #000; }
   @media (min-width: 320px) {
     .contentTop {
       height: 14.25em; } }
@@ -128,7 +130,10 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
+  .contentTopUnder .featuredImage {
+    width: 100%; }
   @media (min-width: 800px) {
     .contentTopUnder {
       bottom: -5em; } }
@@ -327,3 +332,7 @@ img {
     margin-left: 1em; }
   .hoverBox p {
     color: #fff; }
+
+/* updates styles */
+.updates p:last-child {
+  text-align: center; }

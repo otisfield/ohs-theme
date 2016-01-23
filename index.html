@@ -13,18 +13,21 @@
 
 </head>
 <body data-source="data/page.json">
-    <header class="header" id="header" data-source="data/menu.json"></header>
+    <header class="header" id="header" data-template="header" data-source="data/menu.json"></header>
+    <section class="contentTop" id="contentTop" data-template="contentTop"></section>
     <main class="content" id="content" data-mediamore="/explore" data-media="data/media.json">
-        <section class="events col-md-4 grid-item grid-sizer" id="events" data-source="data/events.json"></section>
-        <aside class="ctaTop col-md-8 grid-item grid-item--width2" id="ctaTop"></aside>
+        <section class="events col-md-4 grid-item grid-sizer piece" data-template="events" data-source="data/events.json"></section>
+        <aside class="ctaTop col-md-8 grid-item grid-item--width2 piece" data-template="ctaTop"></aside>
         <!--<aside class="breadcrumbs col-md-8 grid-item grid-item--width2" id="breadcrumbs"></aside>-->
-        <aside class="contentTitle col-md-8 grid-item grid-item--width2" id="contentTitle"></aside>
-        <section class="contentBody col-md-8 grid-item grid-item--width2" id="contentBody"></section>
-        <aside class="updates col-md-4 grid-item" id="updates"></aside>
-        <aside class="ctaMiddle col-md-4 grid-item" id="ctaMiddle"></aside>
-        <aside class="ctaBottom col-md-8 grid-item grid-item--width2" id="ctaBottom"></aside>
-        <section class="contentBottom col-md-8 grid-item grid-item--width2" id="contentBottom"></section>
-        <aside class="articles col-md-4 grid-item" id="articles" data-source="data/posts.json"></aside>
+        <aside class="contentTitle col-md-8 grid-item grid-item--width2 piece" data-template="contentTitle" data-source="data/page.json"></aside>
+        <aside class="articleSingle col-md-4 grid-item piece" data-source="data/post.json" data-template="articleSingle"></aside>
+        <aside class="updates col-md-4 grid-item piece" data-template="updates"></aside>
+        <aside class="ctaMiddle col-md-4 grid-item piece" data-template="ctaMiddle"></aside>
+        <section class="contentBody col-md-8 grid-item grid-item--width2 piece" data-template="contentBody" data-source="data/page.json"></section>
+        <aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="data/post.json"></aside>
+        <aside class="ctaBottom col-md-8 grid-item grid-item--width2 piece" data-template="ctaBottom"></aside>
+        <section class="contentBottom col-md-8 grid-item grid-item--width2 piece" data-template="contentBottom"></section>
+        <aside class="articles col-md-4 grid-item piece" data-template="articles" data-source="data/posts.json"></aside>
     </main>
     <footer class="footer" id="footer"></footer>
 
@@ -36,6 +39,7 @@
     <script src="js/lib/imagesloaded.pkgd.min.js"></script>
     <script src="js/lib/jquery.masonry.min.js"></script>
     <script src="js/templates.min.js"></script>
+    <script src="js/dev/jquery.renderTemplate.js"></script>
     <script src="js/dev/main.js"></script>
     <script src="js/dev/media.js"></script>
     <!-- End Scripts -->

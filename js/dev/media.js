@@ -2,7 +2,6 @@
  * Media.js - handling images, modals, etc
  */
 
-
 ;
 
 (function(window,document,$,undefined){
