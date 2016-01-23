@@ -6,6 +6,8 @@
 
 (function(window,document,$,undefined){
 
+    "use strict";
+
     var mediaContainer = '.media.piece',
         buttonTag = '<a>',
         divTag = '<div>',

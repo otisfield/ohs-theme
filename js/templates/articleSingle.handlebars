@@ -1,4 +1,5 @@
-<h2><a href="{{link}}">{{title/rendered}}</a></h2>
+{{#each this}}
+<h2><a href="{{link}}">{{{title/rendered}}}</a></h2>
 <hr>
 {{#if media}}
 <a href="{{link}}" title="{{title/rendered}}">
@@ -7,3 +8,4 @@
 {{/if}}
 {{{excerpt/rendered}}}
 <p><a href="{{link}}">Read More</a></p>
+{{/each}}

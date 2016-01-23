@@ -3,6 +3,9 @@
  */
 
 (function(S,undefined) {
+
+    "use strict";
+
     var $content = $('#content');
 
     if ($content.data("media") !== undefined) {

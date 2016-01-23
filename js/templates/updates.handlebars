@@ -1,4 +1,8 @@
-<h2>Archives</h2>
+{{#each this}}
+<h2>{{title/rendered}}</h2>
 <hr>
-<p>The Sybil Lamb Archive Room is open to the public for researching or viewing.  It is open Wednesdays, 2PM-4PM, from May to September, weather permitting; or by appointment</p>
-<p><a href="/archives">Learn More</a></p>
+{{#if media}}
+    <img src="{{#if media/large}}{{media/large/url}}{{else}}{{media/url}}{{/if}}" alt="{{rendered/title}}">
+{{/if}}
+{{{content/rendered}}}
+{{/each}}
