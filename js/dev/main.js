@@ -17,7 +17,7 @@
                 "source": "media",
                 "template": "media",
                 "isAppend": true
-            },false);
+            },true);
         }
     });
 

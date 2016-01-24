@@ -346,6 +346,10 @@ img {
   .articleSingle p:last-child {
     margin-top: 0; }
 
+.articleSingle img {
+  display: block;
+  margin: 0 auto; }
+
 /* social Styles */
 .navbar-nav .social-media.social-media-header a,
 .navbar-nav .social-media.social-media-header a:link,
