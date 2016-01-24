@@ -17,7 +17,7 @@
 
     $(document).on('mouseenter',mediaContainer, function(e){
         var $this = $(this),
-            data = $this.data(),
+            data = $this.find('a').data(),
             isMoreMedia = contentData.mediamore,
             moreMediaUrl = isMoreMedia === true ? data.more : isMoreMedia === false ? false : isMoreMedia,
             zoomLink = $(buttonTag,{
@@ -35,7 +35,7 @@
             }).append(zoomLink).append(moreMediaLink).append($('<p>').html(data.title));
 
         if ($this.children('.hoverBox').length < 1) {
-            $this.append($hoverBox);
+            $this.prepend($hoverBox);
         }
 
     }).on('mouseleave',mediaContainer, function(e){

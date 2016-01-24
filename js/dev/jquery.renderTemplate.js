@@ -5,7 +5,8 @@
 
     "use strict";
 
-    var dataCache = {};
+    var dataCache = {},
+        isCalled = false;
 
     function dataAccumulator(dataSource) {
 
@@ -77,19 +78,20 @@
         return thePromise;
     }
 
-    function isItReady(a,b,callback) {
-        if (a === b) {
+    function isItReady(a,b,isMasonry,callback) {
+        if (a === b && isMasonry) {
             initializeMasonry('#content');
         }
 
-        if (typeof callback === 'function') {
+        if (typeof callback === 'function' && !isCalled) {
+            isCalled = true;
             callback.apply();
         }
 
         return;
     }
 
-    $.fn.renderTemplates = function(options,callback){
+    $.fn.renderTemplates = function(options,isMasonry,callback){
 
         var length = this.length,
             count = 0,
@@ -106,19 +108,27 @@
             if (elementSource) {
                 ajaxTemplate($this,elementTemplate,elementSource,isAppend).done(function(){
                     count += 1;
-                    isItReady(length,count,callback);
+
+                        isItReady(length, count, isMasonry, callback);
+
                 }).fail(function(){
                     count += 1;
-                    isItReady(length,count,callback);
+
+                        isItReady(length, count, isMasonry, callback);
+
                 });
             } else if (elementTemplate) {
                 renderTemplate($this,elementTemplate,{},isAppend);
                 count += 1;
-                isItReady(length,count,callback);
+
+                    isItReady(length, count, isMasonry, callback);
+
             } else {
                 $this.hide();
                 count += 1;
-                isItReady(length,count,callback);
+
+                    isItReady(length, count, isMasonry, callback);
+
             }
         });
     }

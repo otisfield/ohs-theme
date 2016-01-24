@@ -1,13 +1,28 @@
 <section class="navbar navbar-inverse">
     <div class="container">
-        <aside class="social-media social-media-footer" data-template="socialMedia" data-source="data/social.json"></aside>
+        <aside class="social-media social-media-footer" data-template="socialMedia" data-source="/wp-json/ohs/v1/social"></aside>
         <section class="footerAddress" id="footerAddress">
-            <span>Otisfield Historical Society</span><br>
-            <span>53 Bell Hill Rd</span><br>
-            <span>Otisfield, ME 04270</span><br>
+            {{#if organizationName}}
+                <span>{{organizationName}}</span><br>
+            {{/if}}
+            {{#if addressLine1}}
+               <span>{{addressLine1}}</span> <br>
+            {{/if}}
+            {{#if addressLine2}}
+                <span>{{addressLine2}}</span><br>
+            {{/if}}
+            {{#if city}}
+                <span>{{city}}</span>
+            {{/if}}
+            {{#if state}}
+                , <span>{{state}}</span>&nbsp;
+            {{/if}}
+            {{#if zip}}
+                <span>{{zip}}</span>
+            {{/if}}
         </section>
         <section class="copyright" id="copyright">
-            <span>&copy; 2014-2016, Otisfield Historical Socity.</span><br>
+            <span>&copy; 2014-2016, {{organizationName}}.</span><br>
             <span>All Rights Reserved.</span>
         </section>
     </div>

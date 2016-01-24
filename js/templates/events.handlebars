@@ -13,7 +13,7 @@
         {{#if location}}
         <span class="eventInfo location" itemprop="location">{{location/name}}</span><br>
         {{/if}}
-        <span class="eventTime"><span class="startTime">{{dates/startTime/human}}</span>{{#if dates/endTime}}<span class="endTime">{{dates/endTime/human}}{{/if}}</span>
+        <span class="eventTime"><span class="startTime">{{dates/startTime/human}}</span>{{#if dates/endTime}} to <span class="endTime">{{dates/endTime/human}}{{/if}}</span>
     </div>
 </div>
 {{/each}}

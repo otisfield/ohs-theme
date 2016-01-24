@@ -140,6 +140,20 @@ img {
     background-image: linear-gradient(to bottom,#222 0,#000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff000000', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+    .navbar-brand {
+      padding-top: 5px;
+    }
+
+    .navbar-nav>li>a,
+    .navbar-nav>li>a:link,
+    .navbar-nav>li>a:visited, {
+      color: #fff;
+    }
+
+    .navbar-nav>li>a:hover {
+      color: #969696;
+    }
   }
 
   /* content Styles */

@@ -7,14 +7,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">OHS</a>
+            <a class="navbar-brand" href="{{siteLink}}"><img src="{{logo}}"></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                {{#each this}}
+                {{#each navigation}}
                 <li><a href="{{url}}" data-id="{{ID}}" target="{{target}}" title="{{title}}"><span>{{title}}</span></a></li>
                 {{/each}}
-                <li class="social-media social-media-header" data-template="socialMedia" data-source="data/social.json"></li>
+                <li class="social-media social-media-header" data-template="socialMedia" data-source="/wp-json/ohs/v1/social"></li>
             </ul>
         </div>
     </div>

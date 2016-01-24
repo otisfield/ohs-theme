@@ -6,16 +6,19 @@
 
     "use strict";
 
-    var $content = $('#content');
+    var $content = $('#content'),
+        $media = $content.data("media"),
+        isMasonry = $media !== undefined ? false : true;
 
-    if ($content.data("media") !== undefined) {
-        $content.renderTemplates({
-            "source": "media",
-            "template": "media",
-            "isAppend": true
-        });
-    }
 
-$('[data-template]').renderTemplates();
+    $('[data-template]').renderTemplates({},isMasonry,function(){
+        if ($media !== undefined) {
+            $content.css('overflow','auto').renderTemplates({
+                "source": "media",
+                "template": "media",
+                "isAppend": true
+            },false);
+        }
+    });
 
 })(jQuery);
