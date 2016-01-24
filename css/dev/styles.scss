@@ -15,7 +15,7 @@ img {
 
 .col-md-8 {
   @media (min-width: 992px) {
-    width: 65%;
+    width: 64%;
   }
 }
 
@@ -117,6 +117,7 @@ img {
 
     &.media {
       padding-top: 1em;
+      text-align: center;
 
       p {
         margin-top: 1em;
@@ -139,13 +140,26 @@ img {
     background-image: linear-gradient(to bottom,#222 0,#000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff000000', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+    .navbar-brand {
+      padding-top: 5px;
+    }
+
+    .navbar-nav>li>a,
+    .navbar-nav>li>a:link,
+    .navbar-nav>li>a:visited, {
+      color: #fff;
+    }
+
+    .navbar-nav>li>a:hover {
+      color: #969696;
+    }
   }
 
   /* content Styles */
 
   .content {
     background-color: #ddd;
-    overflow: auto;
 
     section, aside, {
       @media (max-width: 991px) {
@@ -162,6 +176,7 @@ img {
     height: 10em;
     overflow: hidden;
     margin-bottom: -1.5em;
+    background: #000;
 
     @media (min-width: 320px) {
       height: 14.25em;
@@ -182,6 +197,11 @@ img {
     bottom: 0;
     right: 0;
     max-width: 100%;
+    width: 100%;
+
+    .featuredImage {
+      width: 100%;
+    }
 
     @media (min-width: 800px) {
       bottom: -5em;
@@ -341,11 +361,6 @@ img {
     }
   }
 
-  .eventTitle,
-  .articleTitle{
-    color: rgb(174,26,50);
-  }
-
   .eventDivider,
   .articleDivider{
     @media (min-width: 690px) {
@@ -358,8 +373,8 @@ img {
   }
 
   .articleLink {
-    a {
-      color: #ae1a32;
+    .glyphicon {
+      font-size: 0.75em;
     }
   }
 
@@ -376,7 +391,7 @@ img {
 
   /* ctaMiddle Styles */
 
-.ctaMiddle p {
+.cta {
   text-align: center;
 }
 
@@ -419,4 +434,60 @@ img {
     color: #fff;
   }
 
+}
+
+/* updates styles */
+
+.updates,
+.articleSingle {
+  p:last-child {
+    text-align: center;
+  }
+}
+
+.articleSingle {
+  p {
+    margin-top: 1em;
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+/* social Styles */
+.social-media {
+  .navbar-nav & {
+    &.social-media-header {
+      a,
+      a:link,
+      a:visited {
+        display: inline-block;
+      }
+    }
+  }
+
+  &.social-media-footer {
+    text-align:center;
+    padding-top: 1em;
+
+    a,
+    a:link,
+    a:visited {
+      color: #fff;
+      display: inline-block;
+      padding: 0 1em;
+    }
+
+    a:hover {
+      color: #337ab7;
+      text-decoration: none;
+    }
+  }
 }

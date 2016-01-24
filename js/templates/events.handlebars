@@ -1,17 +1,19 @@
 <h2>Events</h2>
 <hr class="headerDivider">
-{{#each posts}}
+{{#each this}}
 <hr class="eventDivider">
 <div class="event vevent" itemprop="event" itemscope itemtype="http://schema.org/Event">
     <div class="eventDate">
-        <a href="/events/{{post_name}}"><span>OCT</span><br>
-        <span>22</span><br>
-        <span>2015</span></a>
+        <a href="{{post_name}}"><span>{{dates/startDate/monthAbbreviation}}</span><br>
+        <span>{{dates/startDate/day}}</span><br>
+        <span>{{dates/startDate/year}}</span></a>
     </div>
     <div class="eventData">
-        <a href="/events/{{post_name}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{post_title}}</span></a><br>
-        <span class="eventInfo location" itemprop="location">Old Town House, Otisfield</span><br>
-        <span class="eventTime">7:00PM</span>
+        <a href="{{link}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{title/rendered}}</span></a><br>
+        {{#if location}}
+        <span class="eventInfo location" itemprop="location">{{location/name}}</span><br>
+        {{/if}}
+        <span class="eventTime"><span class="startTime">{{dates/startTime/human}}</span>{{#if dates/endTime}} to <span class="endTime">{{dates/endTime/human}}{{/if}}</span>
     </div>
 </div>
 {{/each}}

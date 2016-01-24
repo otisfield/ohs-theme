@@ -1,16 +1,27 @@
 <?php
   get_header();
 ?>
-      <header class="header" id="header" data-source="/wp-json/ohs/v1/menu"></header>
-      <main class="content" id="content" data-mediamore="/explore" data-media="/wp-json/wp/v2/media?parent=0">
-          <section class="events col-md-4 grid-item grid-sizer" id="events" data-source="/wp-json/ohs/v1/events/"></section>
-          <aside class="ctaTop col-md-8 grid-item grid-item--width2" id="ctaTop"></aside>
-          <aside class="updates col-md-4 grid-item" id="updates"></aside>
-          <aside class="articles col-md-4 grid-item" id="articles" data-source="/wp-json/wp/v2/posts"></aside>
-          <aside class="ctaMiddle col-md-4 grid-item" id="ctaMiddle"></aside>
-          <aside class="ctaBottom col-md-8 grid-item grid-item--width2" id="ctaBottom"></aside>
-      </main>
-      <footer class="footer" id="footer"></footer>
+	<header class="header" id="header" data-template="header" data-source="/wp-json/ohs/v1/menu"></header>
+    <section class="contentTop" id="contentTop" data-template="contentTop" data-source="/wp-json/ohs/v1/home"></section>
+    <div class="content" id="content" data-mediamore="/explore">
+        <section class="events col-md-4 grid-item grid-sizer piece" data-template="events" data-source="/wp-json/wp/v2/events"></section>
+        <aside class="cta col-md-8 grid-item grid-item--width2 piece" data-template="cta" data-source="/wp-json/wp/v2/ctas/447"></aside>
+        <aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(1)?>"></aside>
+        <aside class="updates col-md-4 grid-item piece" data-template="updates" data-source="/wp-json/wp/v2/updates?posts_per_page=1"></aside>
+        <aside class="cta col-md-4 grid-item piece" data-template="cta" data-source="/wp-json/wp/v2/ctas/448"></aside>
+		<aside class="media mediaSingle col-md-4 grid-item piece" data-template="mediaSingle" data-source="/wp-json/wp/v2/media/<?=get_nth_post(1,'attachment')?>"></aside>
+		<aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(2)?>"></aside>
+        <aside class="media mediaSingle col-md-4 grid-item piece" data-template="mediaSingle" data-source="/wp-json/wp/v2/media/<?=get_nth_post(2,'attachment')?>"></aside>
+		<aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(3)?>"></aside>
+		<aside class="media mediaSingle col-md-4 grid-item piece" data-template="mediaSingle" data-source="/wp-json/wp/v2/media/<?=get_nth_post(3,'attachment')?>"></aside>
+		<aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(4)?>"></aside>
+		<aside class="media mediaSingle col-md-4 grid-item piece" data-template="mediaSingle" data-source="/wp-json/wp/v2/media/<?=get_nth_post(4,'attachment')?>"></aside>
+		<aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(5)?>"></aside>
+		<aside class="media mediaSingle col-md-4 grid-item piece" data-template="mediaSingle" data-source="/wp-json/wp/v2/media/<?=get_nth_post(5,'attachment')?>"></aside>
+		<aside class="cta col-md-8 grid-item piece" data-template="cta" data-source="/wp-json/wp/v2/ctas/447"></aside>
+	</div>
+    <footer class="footer" id="footer" data-template="footer" data-source="/wp-json/ohs/v1/options"></footer>
+	
 <?php
   get_footer();
 ?>
