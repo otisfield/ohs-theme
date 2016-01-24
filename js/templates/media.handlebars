@@ -1,0 +1,8 @@
+{{#each this}}
+    <div class="media piece col-md-4 grid-item">
+        <a class="mediaModal" href="{{source_url}}" title="{{title/rendered}}" data-url="{{source_url}}" data-title="{{title/rendered}}">
+            <img src="{{#if media_details/sizes/medium_large}}{{media_details/sizes/medium_large/source_url}}{{else}}{{#if media_details/sizes/large}}{{media_details/sizes/large/source_url}}{{else}}{{media_details/sizes/full/source_url}}{{/if}}{{/if}}" alt="{{caption}}">
+        </a>
+        <p>{{caption}}</p>
+    </div>
+{{/each}}
