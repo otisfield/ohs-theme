@@ -1,0 +1,17 @@
+<h2>Articles</h2>
+<hr class="headerDivider">
+{{#each this}}
+    <hr class="articleDivider">
+    <div class="article">
+        <div class="articleImage">
+            <a href="{{link}}"><img src="{{media/thumbnail/url}}" alt=""></a>
+        </div>
+        <div class="articleInformation">
+            <a href="{{link}}"><span class="articleTitle">{{{title/rendered}}}</span></a><br>
+            <span class="articleTeaser"></span><br>
+            <span class="articleLink"><a href="{{link}}" title="{{title/rendered}}">Read More <i class="glyphicon glyphicon-chevron-right"></i></a></span>
+        </div>
+    </div>
+{{/each}}
+
+

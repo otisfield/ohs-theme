@@ -1,0 +1,8 @@
+{{#each this}}
+<h2>{{title/rendered}}</h2>
+<hr>
+{{#if media}}
+    <img src="{{#if media/large}}{{media/large/url}}{{else}}{{media/url}}{{/if}}" alt="{{rendered/title}}">
+{{/if}}
+{{{content/rendered}}}
+{{/each}}

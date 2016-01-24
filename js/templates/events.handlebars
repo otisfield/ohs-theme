@@ -1,0 +1,21 @@
+<h2>Events</h2>
+<hr class="headerDivider">
+{{#each this}}
+<hr class="eventDivider">
+<div class="event vevent" itemprop="event" itemscope itemtype="http://schema.org/Event">
+    <div class="eventDate">
+        <a href="{{post_name}}"><span>{{dates/startDate/monthAbbreviation}}</span><br>
+        <span>{{dates/startDate/day}}</span><br>
+        <span>{{dates/startDate/year}}</span></a>
+    </div>
+    <div class="eventData">
+        <a href="{{link}}" itemprop="url"><span class="eventTitle summary" itemprop="name">{{title/rendered}}</span></a><br>
+        {{#if location}}
+        <span class="eventInfo location" itemprop="location">{{location/name}}</span><br>
+        {{/if}}
+        <span class="eventTime"><span class="startTime">{{dates/startTime/human}}</span>{{#if dates/endTime}} to <span class="endTime">{{dates/endTime/human}}{{/if}}</span>
+    </div>
+</div>
+{{/each}}
+
+

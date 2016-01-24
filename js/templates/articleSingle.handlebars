@@ -1,0 +1,9 @@
+<h2><a href="{{link}}">{{{title/rendered}}}</a></h2>
+<hr>
+{{#if media}}
+<a href="{{link}}" title="{{title/rendered}}">
+    <img src="{{#if media/large}}{{media/large/url}}{{else}}{{media/url}}{{/if}}" alt="{{rendered/title}}">
+</a>
+{{/if}}
+{{{excerpt/rendered}}}
+<p><a href="{{link}}">Read More</a></p>
