@@ -4,7 +4,7 @@
 	<header class="header" id="header" data-template="header" data-source="/wp-json/ohs/v1/menu"></header>
     <section class="contentTop" id="contentTop" data-template="contentTop" data-source="/wp-json/ohs/v1/home"></section>
     <div class="content" id="content" data-mediamore="/explore">
-        <section class="events col-md-4 grid-item grid-sizer piece" data-template="events" data-source="/wp-json/wp/v2/events"></section>
+        <section class="events col-md-4 grid-item grid-sizer piece" data-template="events" data-source="/wp-json/wp/v2/events?per_page=5"></section>
         <aside class="cta col-md-8 grid-item grid-item--width2 piece" data-template="cta" data-source="/wp-json/wp/v2/ctas/447"></aside>
         <aside class="articleSingle col-md-4 grid-item piece" data-template="articleSingle" data-source="/wp-json/wp/v2/posts/<?=get_nth_post(1)?>"></aside>
         <aside class="updates col-md-4 grid-item piece" data-template="updates" data-source="/wp-json/wp/v2/updates?posts_per_page=1"></aside>
