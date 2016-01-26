@@ -30,7 +30,7 @@ add_action('init', 'modify_jquery');
  * Add features
  */
  
-add_image_size( 'display', 600, 900 );
+add_image_size( 'display', 500, 750 );
 
 function disable_wp_emojicons() {
 
@@ -243,5 +243,15 @@ function get_nth_post($n, $postType = 'post') {
 	$posts = get_posts( $args );
 	
 	return $posts[$n-1]->ID;
+}
+
+/**
+ * Contact Form 7 Update
+ */
+ 
+add_filter('wpcf7_form_action_url', 'wpcf7_custom_form_action_url');
+function wpcf7_custom_form_action_url()
+{
+    return '#wpcf7-f478-o1';
 }
 ?>
